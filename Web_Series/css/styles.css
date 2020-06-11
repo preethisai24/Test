@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+}
+
+
 body {
   font-size: 16px;
   color: #fff;
@@ -8,7 +13,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-  background-color: #D48166;
+  background-color: #23ABA7;
   border-radius: 0;
   border: 0;
 }
@@ -42,7 +47,7 @@ body {
   border-top: 1px solid #222930;
 }
 #nav-list a:hover {
-  background: white;
+  color:  white;
 }
 #nav-list a span {
   font-size: 1.8em;
@@ -66,13 +71,31 @@ body {
   background-color: #222;
   border-top: 0;
 }
-
-section.download a{
- margin:10px;
+/*.row{
+  position: relative;
 }
+.download a{
+  position: absolute;
+
+  text-align: center;
+  margin-right: 20px: 
+
+}*/
+hr{
+  width: 50%;
+}
+
+.download a{
+  color: #23ABA7;
+  font-family: 'Josefin Slab', serif;
+}
+
 .download a:hover{
   text-decoration: none;
   color: white;
+}
+#copy{
+  font-family: 'Josefin Slab', serif;
 }
 /* END FOOTER */
 
@@ -83,7 +106,7 @@ section.download a{
 /* MENU CATEGORIES PAGE */
 .category-tile { 
   position: relative;
-  border: 2px solid #3F0C1F;
+  border: 1px solid white;
   overflow: hidden;
   width: 200px;
   height: 200px;
@@ -116,6 +139,16 @@ section.download a{
     width: 100%;
     height: 100%
   }
+  .row+div{
+  position: relative;
+
+}
+.download a{
+  position: relative;
+  float: left;
+  padding:50px; 
+
+}
 
   
 }
@@ -129,18 +162,32 @@ section.download a{
     height: 100px;
     margin: 5px 5px 5px 0;
   }
-  /* End Header */
+  .row+div{
+  position: relative;
 
-  /* Home Page */
-  
-  /* End Home Page */
 }
+.download a{
+  position: relative;
+  float: left;
+  padding:35px;
+
+}
+ }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Home Page */
-  
-  /* End Home Page */
+  /* footer*/
+  .row+div{
+  position: relative;
+
+}
+.download a{
+  position: relative;
+  float: left;
+  padding:20px;
+
+}
+  /* End footer */
 }
 
 /********** Extra small devices only **********/
@@ -163,21 +210,6 @@ section.download a{
     margin-right: 5px;
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-  #xs-deliver {
-    margin-top: 5px;
-    font-size: .7em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
   /* End Header */
 
   /* Footer */
