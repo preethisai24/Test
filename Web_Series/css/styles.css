@@ -22,7 +22,51 @@ body {
 .navbar-brand {
   padding-top: 25px;
 }
-.navbar-brand h1 { /* Restaurant name */
+ 
+/**search *
+
+.wrapper{
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,0.6);
+  max-width: 500px;
+  width: 40%;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.wrapper .input{
+  width: 85%;
+  padding: 15px 20px;
+  border:none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.searchbtn{
+  background:#ffec00;
+  width: 10%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.searchbtn .fas{
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+
+}
+/*search end*/
+
+
+.navbar-brand h1 { /*name */
  font-family: 'VT323', monospace;
   color:#E9E9E9 ;
   font-size: 1.8em;
